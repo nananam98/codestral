@@ -5,7 +5,7 @@ from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
 
 client_groq = Groq(api_key="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")
-client_mistral = MistralClient(api_key="CkmGWlTZ8hDMF0U1mFtt35Of7YNRXc24")
+client_mistral = MistralClient(api_key="hTwhGP5ZWhfjqTOiJrtX7olzE2RON4Eh")
 model = "codestral-latest"
 
 def analysis_wireframe(wireframe):
