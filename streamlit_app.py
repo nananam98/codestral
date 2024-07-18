@@ -77,7 +77,7 @@ def generate_code(text):
     for idx, (rd, me, pu, fn, rv) in enumerate(zip(resource_description, methods_endpoints, parameters_used, function_names, return_values)):
         st.write("-----------------------")
         st.write(methods_endpoints[idx])
-        config = f"''' Resource description: {rd} | Methods and endpoints: {me} | Parameters used: {pu} | Django Rest framework | model: {chat_response.choices[0].message.content}'''"
+        config = f"''' Resource description: {rd} | Methods and endpoints: {me} | Parameters used: {pu} | Django Rest framework | Api View | Serializers | model: {chat_response.choices[0].message.content}'''"
         prompt = "def " + fn.replace('`', '') + ":" + config
         suffix = rv
         response = client_mistral.completion(
