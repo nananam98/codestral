@@ -12,31 +12,19 @@ def analysis_wireframe(wireframe):
     prompt = f"""
                 You are a Python programmer, from the following detailed description of the screen design, list the APIs and Database needed to design this screen.
                 Important note: design the necessary information fields so that all APIs can work (normalize 1NF, 2NF, 3NF and more)
-                Each API must definitely include:
-                1. Resource Description
-                2. Methods and endpoints
-                3. Parameters used
-                4. Function name (variable: example value)
-                5. Return value (variable: example value)
-                You must separate APIs and Database Schema by a sign: '----------'.
-
                 Description:
                 {wireframe}
-
                 Required Response format (do not give note at the end):
                 **APIs**
-
                 **1. API name 1 **
                 1. Resource Description: X
                 2. Methods and endpoints: Y
                 3. Parameters used: A, B, C
                 4. Function name: function_name(variables)
                 5. Return value: (variable: example value)
-
-                ----------
+                You must separate APIs and Database Schema by a sign: '----------'.
 
                 **Database Schema**
-
                 **table**
                 * `column` (properties)
                 """
