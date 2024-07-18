@@ -1,3 +1,7 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+--trusted-host download.pytorch.org
+--extra-index-url https://download.pytorch.org/whl/cpu
+pip>=24.1.2
 streamlit
 groq
 re
